@@ -8,9 +8,7 @@ import org.junit.Test;
 public class MyFirstTest {
 	void fail(String s){
 		System.out.println("Going to fail...");
-	assertTrue("Purposefully failing" , !false);
-		//assertFalse(new String("5").equals(new String("5")));
-		//assertFalse( 1 != 1  );
+		assertTrue("Purposefully failing" , !false);
 	}
 	void findSuccess(String s){
 		System.out.println("Work hard...");
@@ -29,5 +27,7 @@ public class MyFirstTest {
 	@After public void reTry(){
 		System.out.println("<working after each test >I must re try... ");
 	}
+	
+	public void cleanUp(){}
 
 }
