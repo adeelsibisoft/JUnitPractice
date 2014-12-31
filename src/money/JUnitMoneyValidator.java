@@ -34,7 +34,7 @@ public class JUnitMoneyValidator {
 	@Test public void testDenominationMultiplication(){
 		//  flow 1
 		
-		Dollar d4 = new Dollar(4);
+		Dollar d4 = new Dollar(4.0);
 		d4.getMultiplied(d4);
 		assertEquals(new Dollar(16),  d4 );
 		//assertEquals(d4, new Dollar(4));// ***explicitly broken this flow as getMultiplied() changes its own vale
@@ -52,7 +52,7 @@ public class JUnitMoneyValidator {
 		
 		Dollar d9 = new Dollar(9);
 		assertEquals(new Dollar(81) , Dollar.getProduct( d9 , d9 ) ); 
-		assertEquals( 9.0, d9.baseValue, 0);// d9 obj is not changed
+		assertEquals( 9.0, d9.seedAmount, 0);// d9 obj is not changed
 		
 	}
 	
