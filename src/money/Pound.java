@@ -1,8 +1,8 @@
 package money;
 
 public class Pound {
-	private double baseAmount;// made it private and its name differs from Dollar's which is baseValue
 	
+	private double baseAmount;
 	
 	Pound(){}
 	Pound(String p){
@@ -18,7 +18,7 @@ public class Pound {
 	}
 	
 	public boolean equals(Object obj){
-		return baseAmount == ((Pound)obj).baseAmount;
+		return baseAmount == ((Dollar)obj).baseValue;
 	}
 
 	public double getBaseAmount() {

@@ -1,21 +1,27 @@
 package money;
-public class Dollar {
+public class Dollar{
 	
 	public double baseValue;// made it public explicitly, to see why it must be private??
-	
+	//public String currency ;// lets first move this to common class then will introduce its currency symbol.  
 	public Dollar(){
 		
 	}
 	public Dollar(String sParam){
-		this.baseValue = Double.parseDouble(sParam);
+		baseValue = Double.parseDouble(sParam);
 	}
 	public Dollar(double d){
 		baseValue = d;
 	}
-	@Override
+	/*@Override
 	public boolean equals(Object dollar){
 		return baseValue == ((Dollar)dollar).baseValue;
+	}*/
+	
+	@Override
+	public boolean equals(Object pound){
+		return baseValue == ((Pound)pound).getBaseAmount(); // Stuck in baseAmount VS baseValue, going to sync in next iteration.
 	}
+	
 	public String toString(){
 		return baseValue+"";
 	}
