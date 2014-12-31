@@ -1,7 +1,7 @@
 package money;
 public class Dollar {
 	
-	public double baseValue;
+	public double baseValue;// made it public explicitly, to see why it must be private??
 	
 	public Dollar(){
 		
