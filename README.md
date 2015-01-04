@@ -1,5 +1,6 @@
 JUnitPractice
 =============
-It is just a practice - so don't take it serious.
+
+Turned this practice repository into  Assignment#0 check-in.
 
 JUnitPractice
